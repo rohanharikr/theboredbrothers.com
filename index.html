@@ -5,26 +5,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Bored Brothers</title>
 	<script src="https://cdn.tailwindcss.com"></script>
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
-
-		body{
-			font-family: 'Atkinson Hyperlegible', sans-serif;	
-		}
-	</style>
 	<meta name="theme-color" content="#facc15">
 </head>
 <body>
 	<section class="bg-yellow-400 h-screen">
-		<div class="max-w-3xl mx-auto p-10">
-			<div class="flex justify-between">
-				<div>
-					<h1 class="text-6xl font-black">the<br/>bored<br/>brothers</h1>
-					<span class="mt-4 block text-xs">© tbb, all rights reserved.<br/>Not a member of the Cheezburger© Group.</span>
-					<span class="mt-4 block text-xs">Based in Dubai, United Arab Emirates.</span>
-				</div>
+		<div class="h-full flex flex-col max-w-3xl mx-auto p-10">
+			<div class="flex flex-col h-2/6">
+				<h1 class="text-6xl font-black">the<br/>bored<br/>brothers</h1>
+				<span class="mt-4 block text-xs">making boring stuff for boring people since 2022.</span>
+				<span class="mt-1 block text-xs">Based in Dubai, United Arab Emirates.</span>
+			</div>
+
+			<div class="flex-1 flex flex-col justify-center h-2/6">
+				<h2 class="text-6xl tracking-wider font-black text-yellow-500"
+				>something boring<br/>is brewing<span id="dots"></span></h2>
+			</div>
+
+			<div class="flex-1 flex flex-col justify-end h-2/6">
+				<span class="mt-4 block text-xs">© tbb, all rights reserved.<br/>Not a member of the Cheezburger© Group.</span>
 			</div>
 		</div>		
 	</section>
 </body>
+<script>
+	const ref = document.querySelector("#dots")
+	setInterval(()=>{
+		if(ref.innerText.length !== 3) {
+			ref.innerText += "."
+		} else {
+			ref.innerText = ""
+		}
+	}, 500)
+</script>
 </html>
