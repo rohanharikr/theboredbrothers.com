@@ -6,22 +6,27 @@
 	<title>The Bored Brothers</title>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<meta name="theme-color" content="#facc15">
+	<style>
+		html,body {
+			height: 100%;
+		}
+	</style>
 </head>
-<body>
-	<section class="bg-yellow-400 h-screen">
-		<div class="h-full flex flex-col max-w-3xl mx-auto p-10">
-			<div class="flex flex-col h-2/6">
-				<h1 class="text-6xl font-black">the<br/>bored<br/>brothers</h1>
+<body class="bg-yellow-400">
+	<section class="h-full flex flex-col">
+		<div class="h-full flex flex-col max-w-3xl mx-auto p-4">
+			<div class="flex flex-col">
+				<h1 class="text-5xl md:text-6xl font-black">the<br/>bored<br/>brothers</h1>
 				<span class="mt-4 block text-xs">making boring stuff for boring people since 2022.</span>
 				<span class="mt-1 block text-xs">Based in Dubai, United Arab Emirates.</span>
 			</div>
 
-			<div class="flex-1 flex flex-col justify-center h-2/6">
-				<h2 class="text-6xl tracking-wider font-black text-yellow-500"
+			<div class="flex-1 flex flex-col my-4">
+				<h2 class="relative top-1/4 text-5xl md:text-6xl tracking-wider font-black text-yellow-500"
 				>something boring<br/>is brewing<span id="dots"></span></h2>
 			</div>
 
-			<div class="flex-1 flex flex-col justify-end h-2/6">
+			<div class="flex flex-col justify-end">
 				<span class="mt-4 block text-xs">© tbb, all rights reserved.<br/>Not a member of the Cheezburger© Group.</span>
 			</div>
 		</div>		
